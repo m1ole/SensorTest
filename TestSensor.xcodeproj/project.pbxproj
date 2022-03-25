@@ -13,6 +13,8 @@
 		6A75BBE427ECCF0500B0481F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A75BBD227ECCF0300B0481F /* ContentView.swift */; };
 		6A75BBE527ECCF0500B0481F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A75BBD327ECCF0500B0481F /* Assets.xcassets */; };
 		6A75BBE627ECCF0500B0481F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A75BBD327ECCF0500B0481F /* Assets.xcassets */; };
+		6A75BBF027ECCF4600B0481F /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A75BBEF27ECCF4600B0481F /* BluetoothManager.swift */; };
+		6A75BBF127ECCF4600B0481F /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A75BBEF27ECCF4600B0481F /* BluetoothManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		6A75BBD827ECCF0500B0481F /* TestSensor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSensor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A75BBDE27ECCF0500B0481F /* TestSensor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSensor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A75BBE027ECCF0500B0481F /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		6A75BBEF27ECCF4600B0481F /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		6A75BBF227ECD53A00B0481F /* TestSensor--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "TestSensor--macOS--Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 		6A75BBCB27ECCF0300B0481F = {
 			isa = PBXGroup;
 			children = (
+				6A75BBF227ECD53A00B0481F /* TestSensor--macOS--Info.plist */,
 				6A75BBD027ECCF0300B0481F /* Shared */,
 				6A75BBDF27ECCF0500B0481F /* macOS */,
 				6A75BBD927ECCF0500B0481F /* Products */,
@@ -57,6 +62,7 @@
 				6A75BBD127ECCF0300B0481F /* TestSensorApp.swift */,
 				6A75BBD227ECCF0300B0481F /* ContentView.swift */,
 				6A75BBD327ECCF0500B0481F /* Assets.xcassets */,
+				6A75BBEF27ECCF4600B0481F /* BluetoothManager.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -177,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A75BBE327ECCF0500B0481F /* ContentView.swift in Sources */,
+				6A75BBF027ECCF4600B0481F /* BluetoothManager.swift in Sources */,
 				6A75BBE127ECCF0500B0481F /* TestSensorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A75BBE427ECCF0500B0481F /* ContentView.swift in Sources */,
+				6A75BBF127ECCF4600B0481F /* BluetoothManager.swift in Sources */,
 				6A75BBE227ECCF0500B0481F /* TestSensorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,11 +317,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JRZ7ZT88JB;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses Bluetooth for scanning peripheral devices";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -327,6 +336,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NonSense.TestSensor;
 				PRODUCT_NAME = TestSensor;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -339,11 +349,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JRZ7ZT88JB;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses Bluetooth for scanning peripheral devices";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -357,6 +368,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NonSense.TestSensor;
 				PRODUCT_NAME = TestSensor;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -371,6 +383,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -378,6 +391,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TestSensor--macOS--Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses Bluetooth for scanning peripheral devices";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -399,13 +415,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JRZ7ZT88JB;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TestSensor--macOS--Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses Bluetooth for scanning peripheral devices";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -415,6 +435,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NonSense.TestSensor;
 				PRODUCT_NAME = TestSensor;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
