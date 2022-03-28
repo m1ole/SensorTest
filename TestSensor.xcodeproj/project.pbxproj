@@ -15,6 +15,14 @@
 		6A75BBE627ECCF0500B0481F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A75BBD327ECCF0500B0481F /* Assets.xcassets */; };
 		6A75BBF027ECCF4600B0481F /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A75BBEF27ECCF4600B0481F /* BluetoothManager.swift */; };
 		6A75BBF127ECCF4600B0481F /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A75BBEF27ECCF4600B0481F /* BluetoothManager.swift */; };
+		6A79DE4E27F11EB500C88672 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79DE4D27F11EB500C88672 /* Home.swift */; };
+		6A79DE4F27F11EB500C88672 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79DE4D27F11EB500C88672 /* Home.swift */; };
+		6A79DE5127F11ED400C88672 /* Sensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79DE5027F11ED400C88672 /* Sensors.swift */; };
+		6A79DE5227F11ED400C88672 /* Sensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79DE5027F11ED400C88672 /* Sensors.swift */; };
+		6A79DE5427F11EE800C88672 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79DE5327F11EE800C88672 /* Data.swift */; };
+		6A79DE5527F11EE800C88672 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79DE5327F11EE800C88672 /* Data.swift */; };
+		6A79DE5727F11EF100C88672 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79DE5627F11EF100C88672 /* Database.swift */; };
+		6A79DE5827F11EF100C88672 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79DE5627F11EF100C88672 /* Database.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,10 @@
 		6A75BBE027ECCF0500B0481F /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		6A75BBEF27ECCF4600B0481F /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 		6A75BBF227ECD53A00B0481F /* TestSensor--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "TestSensor--macOS--Info.plist"; sourceTree = "<group>"; };
+		6A79DE4D27F11EB500C88672 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		6A79DE5027F11ED400C88672 /* Sensors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensors.swift; sourceTree = "<group>"; };
+		6A79DE5327F11EE800C88672 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		6A79DE5627F11EF100C88672 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +71,7 @@
 		6A75BBD027ECCF0300B0481F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				6A79DE4C27F11E9000C88672 /* Views */,
 				6A75BBD127ECCF0300B0481F /* TestSensorApp.swift */,
 				6A75BBD227ECCF0300B0481F /* ContentView.swift */,
 				6A75BBD327ECCF0500B0481F /* Assets.xcassets */,
@@ -82,6 +95,17 @@
 				6A75BBE027ECCF0500B0481F /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		6A79DE4C27F11E9000C88672 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6A79DE4D27F11EB500C88672 /* Home.swift */,
+				6A79DE5027F11ED400C88672 /* Sensors.swift */,
+				6A79DE5327F11EE800C88672 /* Data.swift */,
+				6A79DE5627F11EF100C88672 /* Database.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,8 +207,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A75BBE327ECCF0500B0481F /* ContentView.swift in Sources */,
+				6A79DE5427F11EE800C88672 /* Data.swift in Sources */,
 				6A75BBF027ECCF4600B0481F /* BluetoothManager.swift in Sources */,
+				6A79DE4E27F11EB500C88672 /* Home.swift in Sources */,
 				6A75BBE127ECCF0500B0481F /* TestSensorApp.swift in Sources */,
+				6A79DE5727F11EF100C88672 /* Database.swift in Sources */,
+				6A79DE5127F11ED400C88672 /* Sensors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,8 +221,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A75BBE427ECCF0500B0481F /* ContentView.swift in Sources */,
+				6A79DE5527F11EE800C88672 /* Data.swift in Sources */,
 				6A75BBF127ECCF4600B0481F /* BluetoothManager.swift in Sources */,
+				6A79DE4F27F11EB500C88672 /* Home.swift in Sources */,
 				6A75BBE227ECCF0500B0481F /* TestSensorApp.swift in Sources */,
+				6A79DE5827F11EF100C88672 /* Database.swift in Sources */,
+				6A79DE5227F11ED400C88672 /* Sensors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,9 +349,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = JRZ7ZT88JB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses Bluetooth for scanning peripheral devices";
@@ -349,9 +382,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = JRZ7ZT88JB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses Bluetooth for scanning peripheral devices";
@@ -403,6 +437,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NonSense.TestSensor;
 				PRODUCT_NAME = TestSensor;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -416,10 +451,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = JRZ7ZT88JB;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
